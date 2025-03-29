@@ -12,6 +12,8 @@ This is **NOT** a snippet engine. It is simply a convenient way to quickly add c
 
 So far I've only used it with [miniSnip](https://github.com/Jorenar/miniSnip) so it won't work for others unless they use `.snip` files and follow a similar structure.
 
+Works in neovim too, alongside miniSnip.
+
 The plugin will check the current filetype or ask for a filetype to determine the snippet's language (see **usage** below).
 
 I threw this together quickly and it's worked so far but feel free to make a PR or open an issue and I'll happily try to extend/improve it.
@@ -28,7 +30,7 @@ let g:snippet_dir = '$HOME/.vim/snippets'       " my setup but change it if need
 ```
 
 ## Usage
--  Files/directories will be created automatically if they do not exist.
+- Files/directories will be created automatically if they do not exist.
 - If the snippet already exists, you will be taken to edit it - it should not be overwritten.
 - The snippet file is only created once it is written to disk (`:w`).
 
